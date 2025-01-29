@@ -1,0 +1,384 @@
+/* Google Fonts Link */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./assets/i-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+nav.navbar {
+    color: white;
+    /* color: red; */
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a#logo-name {
+
+    /* margin-left: 120px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 500; */
+    line-height: 80px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a#logo-name:hover {
+    color: rgb(0, 238, 255);
+    transition:  .5s;
+    /* transform: scale(0.98); */
+}
+
+a#logo-name:active {
+    transform: scale(0.98);
+}
+
+
+nav.navbar ul.navbarUl {
+    float: right;
+    margin-right: 80px;
+    list-style: none;
+
+}
+
+
+nav.navbar ul.navbarUl li.navbarLi {
+    /* background-color: red; */
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+nav.navbar ul.navbarUl li.navbarLi a.navbarA {
+    /* background-color: red; */
+    color: white;
+    font-size: 17px;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+li.navbarLi:active {
+    transform: scale(0.98);
+}
+
+li.navbarLi:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.active {
+    width: 90px;
+    height: 34px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    /* background-color: rgba(239, 239, 240, 0.1)  ; */
+    border-radius: 6px;
+}
+
+
+
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    label.logo {
+        /* padding-left: 10px; */
+    }
+
+    nav.navbar ul.navbarUl li.navbarLi a.navbarA {
+        font-size: 16px;
+        padding: 7px 2px;
+    }
+
+
+}
+
+/* @media (max-width: 1050px) {
+    label.logo {
+        padding-left: 30px;
+    }
+
+    nav.navbar ul.navbarUl li.navbarLi a.navbarA {
+        font-size: 16px;
+    }
+
+
+} */
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+    .checkbtn {
+        display: block;
+    }
+
+    label.logo {
+        font-size: 22px;
+    }
+
+    ul.navbarUl {
+        z-index: 5;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+
+    nav.navbar ul.navbarUl li.navbarLi {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav.navbar ul.navbarUl li.navbarLi a.navbarA {
+        font-size: 22px;
+    }
+
+    a.navbarA:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    /* a:hover,
+    a.active {
+        background: none;
+        color: red;
+        text-decoration: underline;
+    } */
+
+    a:hover,
+    a#active {
+        background: none;
+        color: black;
+        text-decoration: underline;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .slider-div ul {
+        
+        color: white;
+        list-style: none;
+        flex-shrink: 0;
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--gap);
+        animation: scroll 20s linear infinite;
+    }
+
+
+    
+}
+
+section {
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+
+/* NAVBAR ENDS here */
+/* Middle section starts here */
+
+
+section.center-content {
+    margin-top: 50px;
+    /* border: 2px solid red; */
+    justify-items: center;
+    margin-bottom: 2px;
+    height: 380px;
+}
+
+
+
+div.profile-img>img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#myname {
+    /* border: 2px solid red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* border: 2px solid white; */
+    color: white;
+    font-size: 18px;
+}
+
+/* Middle section Scroll bar  here */
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    /* border: 2px solid red; */
+    color: white;
+    text-align: center;
+    /* margin-top: 1em; */
+    margin-bottom: 1em;
+    margin-block-end: 2.5rem;
+}
+
+.slider-div {
+    /* border: 2px solid red; */
+    font-size: 20px;
+    padding-block: 8px;
+    border-block: 1px solid;
+    overflow: hidden;
+    user-select: none;
+    /* background-color: rgba(239, 239, 240, 0.1); */
+
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+}
+
+.slider-div ul {
+    color: white;
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+}
+
+.slider-div:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.slider-div ul:first-child {
+    /* background-color: yellow; */
+}
+
+.slider-div ul:last-child {
+    /* background-color: pink; */
+}
+
+.slider-div .role {
+    font-weight: bold;
+}
+
+/* .slider-div .price {
+    margin-inline: 4px;
+  } */
+
+/* .slider-div .plus::before {
+    content: "↑";
+  }
+   */
+.slider-div .role-li::before {}
+
+/* .stock-ticker .plus .change,
+  .stock-ticker .plus::before {
+    color: #089981;
+  } */
+
+.slider-div .role-li .change,
+.slider-div .role-li::before {
+    color: white;
+}
+
+
+                                                                                    /* footer starts here */
+
+
+footer {
+    /* border: 2px solid red; */
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+div.profile-footer-icons {
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+    border-radius: 20px;
+    background: rgba(239, 239, 240, 0.1);
+    height: 90px;
+    width: 36em;
+    /* margin-left: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+ul.footer-icon {
+    /* border: 2px solid firebrick; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 40em;
+    justify-content: space-evenly;
+    /* margin-left: -5% ; */
+    /* margin-top: 6px; */
+}
+
+li {
+    padding: auto;
+}

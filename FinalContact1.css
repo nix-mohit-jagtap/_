@@ -1,0 +1,349 @@
+/* WORKING RESPONSIVE SKILL SECTION */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/i-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    justify-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+nav {
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a#logo-name {
+
+    /* margin-left: 120px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 500; */
+    line-height: 80px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a#logo-name:hover {
+    color: rgb(0, 238, 255);
+    transition: .5s;
+}
+
+a#logo-name:active {
+    transform: scale(1);
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+    list-style: none;
+
+}
+
+
+nav ul li {
+    /* background-color: red; */
+    display: inline-block;
+    line-height: 75px;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+nav ul li a {
+    /* background-color: red; */
+    color: white;
+    font-size: 17px;
+    padding: 7px 18px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+li:active {
+    transform: scale(0.98);
+}
+
+li:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.active {
+    width: 90px;
+    height: 34px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    /* background-color: rgba(239, 239, 240, 0.1)  ; */
+    border-radius: 6px;
+}
+
+
+
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    label.logo {
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+    .checkbtn {
+        display: block;
+    }
+
+    label.logo {
+        font-size: 22px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    a:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+        text-decoration: underline;
+    }
+
+    /* #check:checked~ul {
+        left: 0;
+    } */
+}
+
+section {
+    /* background: url("/assets/i-bg.jpg") no-repeat; */
+    background-size: cover;
+    height: calc(100vh - 80px);
+    margin-bottom: 180px;
+}
+
+/*===============================================================================*/
+
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 38em;
+    margin-top: 150px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+.box1{
+    /* border: 2px solid orange; */
+    width: 500px;
+    height: 602px;
+    box-sizing: border-box;
+    justify-items: center;
+    /* height: 38em; */
+
+    flex: 1;
+
+}
+
+.box2{
+    /* border: 2px solid greenyellow; */
+    width: 500px;
+    height: 602px;
+
+    flex: 1;
+}
+
+
+@media (max-width: 770px) {
+
+    .container{
+        flex-direction: column;
+        height: 1250px;
+    }
+
+    .box2{
+        width: 10px;
+        height: 10px;
+    }
+
+    body{
+    background-image: url(./assets/i-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+}
+
+
+.mini-cards {
+    /* border: 2px solid grey; */
+    color: white;
+    margin: 12px;
+    width: 300px;
+    height: 180px;
+    border-radius: 16px;
+    background-color: rgba(239, 239, 240, 0.1);
+    align-content: center;
+    justify-items: center;
+    /* margin-left: 130px; */
+
+}
+
+.card-text {
+    font-size: 22px;
+    margin-top: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*=============FORM===========================================================*/
+
+
+form {
+    /* border: 2px solid white; */
+    border-radius: 16px;
+    background-color: rgba(239, 239, 240, 0.1);
+    margin-top: 6px;
+    /* margin-right: 130px; */
+    width: 500px;
+    height: 570px;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+p.message-me {
+    color: white;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.main-card-form .message-me {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main-card-form input,
+.main-card-form textarea {
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #444;
+    /* Thin bottom border */
+    border-radius: 5px;
+    background: transparent;
+    font-size: 14px;
+    color: #ffffff;
+    outline: none;
+}
+
+.main-card-form input::placeholder,
+.main-card-form textarea::placeholder {
+    color: #888;
+    /* Subtle placeholder color */
+}
+
+.main-card-form textarea {
+    margin-top: 30px;
+}
+
+.main-card-form input:focus,
+.main-card-form textarea:focus {
+    border-bottom: 2px solid #00bcd4;
+    /* Blue highlight on focus */
+}
+
+.main-card-form textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 80px;
+}
+
+.main-card-form button {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 82%;
+}
+
+

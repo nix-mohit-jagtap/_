@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="FinalContact1.css">
+    <title>Demo html</title>
+</head>
+
+<body>
+
+    <nav>
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <!-- Site logo -->
+        <label class="logo"><a href="./" id="logo-name">MOHIT JAGTAP</a> </label>
+
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="/.skills">Skills</a></li>
+            <li><a href="./projects">Projects</a></li>
+            <li><a href="./contact" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+
+            <div class="box1">
+                <div class="mini-cards">
+                    <img src="assets/c-google-email.png" alt="">
+                    <p class="card-text">mohitjagtap903@gmail.com</p>
+                </div>
+                <div class="mini-cards">
+                    <img src="assets/c-whatsapp-negative.png" alt="whatsappicon">
+                    <p class="card-text">+91-7249186972</p>
+                </div>
+                <div class="mini-cards">
+                    <img src="assets/c-icon-instagram.png" alt="">
+                    <p class="card-text">_mohit.jagtap</p>
+                </div>
+            </div>
+
+                <!-- //erf -->
+            <div class="box2">
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="main-card-form">
+
+                    <p class="message-me">Message me</p>
+        
+                    <!-- Hidden field for access key -->
+                    <input type="hidden" name="access_key" value="82062bfa-747e-4fbc-b7cd-a093460b2ff5">
+        
+                    <!-- Input fields with correct name attributes -->
+                    <input type="text" name="first_name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <textarea name="message" placeholder="Write your message..."></textarea>
+        
+                    <!-- Submit button -->
+                    <button type="submit">Send</button>
+                </form>
+
+                <!-- <form action="https://api.web3forms.com/submit" method="POST" class="main-card-form"></form>
+
+                    <input type="hidden" name="access_key" value="82062bfa-747e-4fbc-b7cd-a093460b2ff5">
+
+                    <p class="message-me">Message me</p>
+
+                    <input type="text" name="first_name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <textarea name="message" placeholder="Write your message..."></textarea>
+
+                    <button type="submit">Send</button>
+                </form> -->
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
