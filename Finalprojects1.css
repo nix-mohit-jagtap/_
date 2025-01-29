@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/assets/i-bg.jpg);
+    background-image: url(assets/i-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -27,6 +27,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 a#logo-name {
