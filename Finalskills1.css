@@ -43,10 +43,11 @@ a#logo-name {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    padding: 0 100px;
+    padding: 0 40px;
     font-weight: bold;
     cursor: pointer;
 }
+
 
 
 a {
