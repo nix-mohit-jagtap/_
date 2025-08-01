@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-image: url(./assets/i-bg.jpg);
     background-repeat: no-repeat;
@@ -194,6 +199,7 @@ section {
     justify-content: center;
     justify-items: center;
     align-items: center;
+
 }
 
 
@@ -236,6 +242,11 @@ div.card {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
     transition: 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -285,3 +296,5 @@ footer{
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+
